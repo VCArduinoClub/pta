@@ -18,6 +18,7 @@ defmodule PtaWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/test", TestController, :test
   end
 
   # Other scopes may use custom stacks.
