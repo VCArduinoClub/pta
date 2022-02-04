@@ -19,6 +19,7 @@ defmodule PtaWeb.Router do
 
     get "/", PageController, :index
     get "/test", TestController, :test
+    get "/test/huh", TestController, :index
   end
 
   # Other scopes may use custom stacks.

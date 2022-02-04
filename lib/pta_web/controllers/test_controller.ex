@@ -5,4 +5,8 @@ defmodule PtaWeb.TestController do
   def test(conn, _param) do
     render(conn, "test.html")
   end
+
+  def index(conn, _param) do
+    render(conn, "index.html")
+  end
 end
