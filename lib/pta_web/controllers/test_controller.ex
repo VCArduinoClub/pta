@@ -9,4 +9,8 @@ defmodule PtaWeb.TestController do
   def index(conn, _param) do
     render(conn, "index.html")
   end
+
+  def show(conn, %{"id" => id}) do
+    render(conn, "show.html", id: id)
+  end
 end
