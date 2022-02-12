@@ -13,6 +13,6 @@ defmodule PtaWeb.TestController do
 
   @spec show(Plug.Conn.t(), map) :: Plug.Conn.t()
   def show(conn, %{"id" => id}) do
-    render(conn, "show.html", id: id<>"html")
+    render(conn, "show.html", id: id)
   end
 end

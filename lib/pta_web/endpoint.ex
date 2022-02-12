@@ -45,5 +45,15 @@ defmodule PtaWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
+  plug :test_plug
   plug PtaWeb.Router
+
+  def test_plug(conn, _opts) do
+    IO.puts """
+      Verb: #{inspect(conn.method)}
+      Host: #{inspect(conn.host)}
+      Headers: #{inspect(conn.host)}
+    """
+    conn
+  end
 end
