@@ -1,4 +1,5 @@
 # Pta
+Website for our PTA!
 
 To start your Phoenix server:
 
